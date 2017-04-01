@@ -20,4 +20,13 @@ class FusenViewController: UIViewController {
         
     }
     
+    @IBAction func donePushed(_ sender: Any) {
+        guard let image = self.memoView.getSignatureAsImage() else { return }
+        self.memo?.update(image: image)
+        MemoViewModel.sharedInstance.memoList.completed()
+    }
+    
+    @IBAction func trashPushed(_ sender: Any) {
+        self.memoView.clear()
+    }
 }

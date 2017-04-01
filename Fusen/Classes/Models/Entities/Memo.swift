@@ -88,6 +88,12 @@ class Memo: Object {
         }
     }
     
+    func update(image: UIImage) {
+        try! Memo.realm.write {
+            self.image = image
+        }
+    }
+    
     static func all() -> [Memo] {
         let users = realm.objects(Memo.self).sorted(byKeyPath: "id", ascending: false)
         var ret: [Memo] = []

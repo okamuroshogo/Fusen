@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pch-pC-Rf0" id="kp1-qb-wg6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -77,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="696.79999999999995" y="-497.00149925037488"/>
         </scene>
-        <!--Fusen View Controller-->
+        <!--Title-->
         <scene sceneID="zDa-6r-Yr9">
             <objects>
                 <viewController id="GgB-sl-sCn" customClass="FusenViewController" customModule="Fusen" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,6 +91,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="V2u-9u-4jE">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="done" id="fJz-ji-ISk">
+                                <connections>
+                                    <action selector="donePushed:" destination="GgB-sl-sCn" id="xp5-QG-chF"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="0nN-Fr-Qk7">
+                                <connections>
+                                    <action selector="trashPushed:" destination="GgB-sl-sCn" id="5xj-4n-r5Q"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCx-Mh-YIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

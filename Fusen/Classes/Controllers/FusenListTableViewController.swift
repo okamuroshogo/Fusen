@@ -13,7 +13,7 @@ class FusenListTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     fileprivate var buttonDisplayMode: ButtonDisplayMode = .titleAndImage
     var buttonStyle: ButtonStyle = .backgroundColor
-    private var nextVC: FusenViewController?
+    fileprivate var nextVC: FusenViewController?
     fileprivate var memoList: [Memo] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +50,7 @@ extension FusenListTableViewController: UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
         self.performSegue(withIdentifier: "fusen", sender: nil)
+        self.nextVC?.memo = self.memoList[indexPath.row]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,7 +60,7 @@ extension FusenListTableViewController: UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? FusenListTableViewCell else { return UITableViewCell() }
         cell.delegate = self
-        cell.label.text = self.memoList[indexPath.row].title
+        cell.memo = self.memoList[indexPath.row]
         return cell
     }
     func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {

@@ -11,9 +11,16 @@ import SwipeCellKit
 
 
 class FusenListTableViewCell: SwipeTableViewCell {
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var fusenIV: UIImageView!
+    @IBOutlet private weak var label: UILabel!
+    @IBOutlet private weak var fusenIV: UIImageView!
 
-    
+    var memo: Memo? {
+        didSet {
+            self.label.text = memo?.title
+            self.fusenIV.image = memo?.image
+            let a = memo?.image
+            print(a)
+        }
+    }
     
 }
