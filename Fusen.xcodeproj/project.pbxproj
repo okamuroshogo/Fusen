@@ -39,6 +39,16 @@
 		2A9ECCC41E8EB34900BAD2A5 /* FusenListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC01E8EB34900BAD2A5 /* FusenListTableViewCell.xib */; };
 		2A9ECCC61E8F508000BAD2A5 /* Fusen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */; };
 		2A9ECCC71E8F508000BAD2A5 /* Fusen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */; };
+		2A9ECCC91E8F521300BAD2A5 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC81E8F521300BAD2A5 /* Memo.swift */; };
+		2A9ECCCA1E8F521300BAD2A5 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC81E8F521300BAD2A5 /* Memo.swift */; };
+		2A9ECCD11E8F53C300BAD2A5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */; };
+		2A9ECCD21E8F53C300BAD2A5 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCD31E8F53C300BAD2A5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */; };
+		2A9ECCD41E8F53C300BAD2A5 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCD51E8F53CC00BAD2A5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */; };
+		2A9ECCD61E8F53CC00BAD2A5 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCD71E8F53CC00BAD2A5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */; };
+		2A9ECCD81E8F53CC00BAD2A5 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +75,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2A9ECCD61E8F53CC00BAD2A5 /* Realm.framework in Embed Frameworks */,
 				2A9ECCBD1E8EB25600BAD2A5 /* SwipeCellKit.framework in Embed Frameworks */,
+				2A9ECCD81E8F53CC00BAD2A5 /* RealmSwift.framework in Embed Frameworks */,
 				2A9ECCA51E8E8DE900BAD2A5 /* EPSignature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -77,7 +89,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2A9ECCD21E8F53C300BAD2A5 /* Realm.framework in Embed Frameworks */,
 				2A9ECCBB1E8EB24E00BAD2A5 /* SwipeCellKit.framework in Embed Frameworks */,
+				2A9ECCD41E8F53C300BAD2A5 /* RealmSwift.framework in Embed Frameworks */,
 				2A9ECCA81E8E8DEE00BAD2A5 /* EPSignature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -107,6 +121,9 @@
 		2A9ECCBF1E8EB34900BAD2A5 /* FusenListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusenListTableViewCell.swift; sourceTree = "<group>"; };
 		2A9ECCC01E8EB34900BAD2A5 /* FusenListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FusenListTableViewCell.xib; sourceTree = "<group>"; };
 		2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fusen.swift; sourceTree = "<group>"; };
+		2A9ECCC81E8F521300BAD2A5 /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Memo.swift; path = Fusen/Classes/Configs/Memo.swift; sourceTree = SOURCE_ROOT; };
+		2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9ECCD51E8F53CC00BAD2A5 /* Realm.framework in Frameworks */,
 				2A9ECCBC1E8EB25600BAD2A5 /* SwipeCellKit.framework in Frameworks */,
+				2A9ECCD71E8F53CC00BAD2A5 /* RealmSwift.framework in Frameworks */,
 				2A9ECCA41E8E8DE900BAD2A5 /* EPSignature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +156,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9ECCD11E8F53C300BAD2A5 /* Realm.framework in Frameworks */,
 				2A9ECCBA1E8EB24E00BAD2A5 /* SwipeCellKit.framework in Frameworks */,
+				2A9ECCD31E8F53C300BAD2A5 /* RealmSwift.framework in Frameworks */,
 				2A9ECCA71E8E8DEE00BAD2A5 /* EPSignature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +241,7 @@
 		2A9ECC851E8E8B0200BAD2A5 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				2A9ECCC81E8F521300BAD2A5 /* Memo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -294,6 +316,8 @@
 		2A9ECCA01E8E8DB100BAD2A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */,
+				2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */,
 				2A9ECCB71E8EB22600BAD2A5 /* SwipeCellKit.framework */,
 				2A9ECCA11E8E8DDB00BAD2A5 /* EPSignature.framework */,
 			);
@@ -484,6 +508,8 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/EPSignature.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -499,6 +525,8 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/EPSignature.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 			);
 			outputPaths = (
 			);
@@ -516,6 +544,7 @@
 				2A9ECC8E1E8E8B7B00BAD2A5 /* AppDelegate.swift in Sources */,
 				2A9ECCC61E8F508000BAD2A5 /* Fusen.swift in Sources */,
 				2A9ECCB51E8EAD2900BAD2A5 /* FusenViewController.swift in Sources */,
+				2A9ECCC91E8F521300BAD2A5 /* Memo.swift in Sources */,
 				2A9ECCAF1E8E9BAD00BAD2A5 /* FusenListTableViewController.swift in Sources */,
 				2A9ECCC11E8EB34900BAD2A5 /* FusenListTableViewCell.swift in Sources */,
 			);
@@ -544,6 +573,7 @@
 				2A9ECC8F1E8E8B7B00BAD2A5 /* AppDelegate.swift in Sources */,
 				2A9ECCC71E8F508000BAD2A5 /* Fusen.swift in Sources */,
 				2A9ECCB61E8EAD2900BAD2A5 /* FusenViewController.swift in Sources */,
+				2A9ECCCA1E8F521300BAD2A5 /* Memo.swift in Sources */,
 				2A9ECCB01E8E9BAD00BAD2A5 /* FusenListTableViewController.swift in Sources */,
 				2A9ECCC21E8EB34900BAD2A5 /* FusenListTableViewCell.swift in Sources */,
 			);

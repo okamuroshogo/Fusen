@@ -1,2 +1,3 @@
 github "ipraba/EPSignature" "1.0.3"
 github "jerkoch/SwipeCellKit" "1.6.1"
+github "realm/realm-cocoa" "v2.5.0"

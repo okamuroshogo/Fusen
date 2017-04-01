@@ -1,4 +1,4 @@
 github "ipraba/EPSignature"
 github "jerkoch/SwipeCellKit"
-
+github "realm/realm-cocoa"
 
