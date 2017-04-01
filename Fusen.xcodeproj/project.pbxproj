@@ -25,6 +25,20 @@
 		2A9ECCA81E8E8DEE00BAD2A5 /* EPSignature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCA11E8E8DDB00BAD2A5 /* EPSignature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A9ECCAC1E8E8E5300BAD2A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9ECCAB1E8E8E5300BAD2A5 /* Assets.xcassets */; };
 		2A9ECCAD1E8E8E5300BAD2A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9ECCAB1E8E8E5300BAD2A5 /* Assets.xcassets */; };
+		2A9ECCAF1E8E9BAD00BAD2A5 /* FusenListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCAE1E8E9BAD00BAD2A5 /* FusenListTableViewController.swift */; };
+		2A9ECCB01E8E9BAD00BAD2A5 /* FusenListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCAE1E8E9BAD00BAD2A5 /* FusenListTableViewController.swift */; };
+		2A9ECCB51E8EAD2900BAD2A5 /* FusenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCB41E8EAD2900BAD2A5 /* FusenViewController.swift */; };
+		2A9ECCB61E8EAD2900BAD2A5 /* FusenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCB41E8EAD2900BAD2A5 /* FusenViewController.swift */; };
+		2A9ECCBA1E8EB24E00BAD2A5 /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCB71E8EB22600BAD2A5 /* SwipeCellKit.framework */; };
+		2A9ECCBB1E8EB24E00BAD2A5 /* SwipeCellKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCB71E8EB22600BAD2A5 /* SwipeCellKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCBC1E8EB25600BAD2A5 /* SwipeCellKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCB71E8EB22600BAD2A5 /* SwipeCellKit.framework */; };
+		2A9ECCBD1E8EB25600BAD2A5 /* SwipeCellKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCB71E8EB22600BAD2A5 /* SwipeCellKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCC11E8EB34900BAD2A5 /* FusenListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCBF1E8EB34900BAD2A5 /* FusenListTableViewCell.swift */; };
+		2A9ECCC21E8EB34900BAD2A5 /* FusenListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCBF1E8EB34900BAD2A5 /* FusenListTableViewCell.swift */; };
+		2A9ECCC31E8EB34900BAD2A5 /* FusenListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC01E8EB34900BAD2A5 /* FusenListTableViewCell.xib */; };
+		2A9ECCC41E8EB34900BAD2A5 /* FusenListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC01E8EB34900BAD2A5 /* FusenListTableViewCell.xib */; };
+		2A9ECCC61E8F508000BAD2A5 /* Fusen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */; };
+		2A9ECCC71E8F508000BAD2A5 /* Fusen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2A9ECCBD1E8EB25600BAD2A5 /* SwipeCellKit.framework in Embed Frameworks */,
 				2A9ECCA51E8E8DE900BAD2A5 /* EPSignature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -62,6 +77,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2A9ECCBB1E8EB24E00BAD2A5 /* SwipeCellKit.framework in Embed Frameworks */,
 				2A9ECCA81E8E8DEE00BAD2A5 /* EPSignature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -85,6 +101,12 @@
 		2A9ECC9A1E8E8BDD00BAD2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A9ECCA11E8E8DDB00BAD2A5 /* EPSignature.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EPSignature.framework; path = Carthage/Build/iOS/EPSignature.framework; sourceTree = "<group>"; };
 		2A9ECCAB1E8E8E5300BAD2A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A9ECCAE1E8E9BAD00BAD2A5 /* FusenListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusenListTableViewController.swift; sourceTree = "<group>"; };
+		2A9ECCB41E8EAD2900BAD2A5 /* FusenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusenViewController.swift; sourceTree = "<group>"; };
+		2A9ECCB71E8EB22600BAD2A5 /* SwipeCellKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwipeCellKit.framework; path = Carthage/Build/iOS/SwipeCellKit.framework; sourceTree = "<group>"; };
+		2A9ECCBF1E8EB34900BAD2A5 /* FusenListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusenListTableViewCell.swift; sourceTree = "<group>"; };
+		2A9ECCC01E8EB34900BAD2A5 /* FusenListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FusenListTableViewCell.xib; sourceTree = "<group>"; };
+		2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fusen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9ECCBC1E8EB25600BAD2A5 /* SwipeCellKit.framework in Frameworks */,
 				2A9ECCA41E8E8DE900BAD2A5 /* EPSignature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9ECCBA1E8EB24E00BAD2A5 /* SwipeCellKit.framework in Frameworks */,
 				2A9ECCA71E8E8DEE00BAD2A5 /* EPSignature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,8 +148,8 @@
 		2A9ECC3A1E8E84D900BAD2A5 = {
 			isa = PBXGroup;
 			children = (
-				2A9ECC451E8E84D900BAD2A5 /* Fusen */,
 				2A9ECCA01E8E8DB100BAD2A5 /* Frameworks */,
+				2A9ECC451E8E84D900BAD2A5 /* Fusen */,
 				2A9ECC5A1E8E84D900BAD2A5 /* FusenTests */,
 				2A9ECC651E8E84D900BAD2A5 /* FusenUITests */,
 				2A9ECC441E8E84D900BAD2A5 /* Products */,
@@ -220,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				2A9ECC901E8E8B9000BAD2A5 /* Plists */,
+				2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -242,6 +267,8 @@
 		2A9ECC8B1E8E8B0800BAD2A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2A9ECCBF1E8EB34900BAD2A5 /* FusenListTableViewCell.swift */,
+				2A9ECCC01E8EB34900BAD2A5 /* FusenListTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +276,8 @@
 		2A9ECC8C1E8E8B0900BAD2A5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A9ECCAE1E8E9BAD00BAD2A5 /* FusenListTableViewController.swift */,
+				2A9ECCB41E8EAD2900BAD2A5 /* FusenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -265,6 +294,7 @@
 		2A9ECCA01E8E8DB100BAD2A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A9ECCB71E8EB22600BAD2A5 /* SwipeCellKit.framework */,
 				2A9ECCA11E8E8DDB00BAD2A5 /* EPSignature.framework */,
 			);
 			name = Frameworks;
@@ -408,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9ECC9B1E8E8BDD00BAD2A5 /* LaunchScreen.storyboard in Resources */,
+				2A9ECCC31E8EB34900BAD2A5 /* FusenListTableViewCell.xib in Resources */,
 				2A9ECC951E8E8BB300BAD2A5 /* Info.plist in Resources */,
 				2A9ECC931E8E8BB300BAD2A5 /* DevInfo.plist in Resources */,
 				2A9ECC9D1E8E8BDD00BAD2A5 /* Main.storyboard in Resources */,
@@ -434,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9ECC9C1E8E8BDD00BAD2A5 /* LaunchScreen.storyboard in Resources */,
+				2A9ECCC41E8EB34900BAD2A5 /* FusenListTableViewCell.xib in Resources */,
 				2A9ECC961E8E8BB300BAD2A5 /* Info.plist in Resources */,
 				2A9ECC941E8E8BB300BAD2A5 /* DevInfo.plist in Resources */,
 				2A9ECC9E1E8E8BDD00BAD2A5 /* Main.storyboard in Resources */,
@@ -451,6 +483,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/EPSignature.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
 			);
 			outputPaths = (
 			);
@@ -465,6 +498,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/EPSignature.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
 			);
 			outputPaths = (
 			);
@@ -480,6 +514,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9ECC8E1E8E8B7B00BAD2A5 /* AppDelegate.swift in Sources */,
+				2A9ECCC61E8F508000BAD2A5 /* Fusen.swift in Sources */,
+				2A9ECCB51E8EAD2900BAD2A5 /* FusenViewController.swift in Sources */,
+				2A9ECCAF1E8E9BAD00BAD2A5 /* FusenListTableViewController.swift in Sources */,
+				2A9ECCC11E8EB34900BAD2A5 /* FusenListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +542,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9ECC8F1E8E8B7B00BAD2A5 /* AppDelegate.swift in Sources */,
+				2A9ECCC71E8F508000BAD2A5 /* Fusen.swift in Sources */,
+				2A9ECCB61E8EAD2900BAD2A5 /* FusenViewController.swift in Sources */,
+				2A9ECCB01E8E9BAD00BAD2A5 /* FusenListTableViewController.swift in Sources */,
+				2A9ECCC21E8EB34900BAD2A5 /* FusenListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
