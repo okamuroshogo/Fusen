@@ -121,7 +121,7 @@
 		2A9ECCBF1E8EB34900BAD2A5 /* FusenListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusenListTableViewCell.swift; sourceTree = "<group>"; };
 		2A9ECCC01E8EB34900BAD2A5 /* FusenListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FusenListTableViewCell.xib; sourceTree = "<group>"; };
 		2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fusen.swift; sourceTree = "<group>"; };
-		2A9ECCC81E8F521300BAD2A5 /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Memo.swift; path = Fusen/Classes/Configs/Memo.swift; sourceTree = SOURCE_ROOT; };
+		2A9ECCC81E8F521300BAD2A5 /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Memo.swift; path = Memo.swift; sourceTree = "<group>"; };
 		2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
