@@ -83,12 +83,14 @@ extension FusenListTableViewController: UITableViewDataSource, UITableViewDelega
         // customize the action appearance
         deleteAction.image = UIImage(named: "delete")
         
-        let more = SwipeAction(style: .default, title: nil) { action, indexPath in
+        let icon = SwipeAction(style: .default, title: nil) { action, indexPath in
+//            let iconName: String?
+//            UIApplication.shared.setAlternateIconName("icon", completionHandler: { error in print(error) })
             
         }
-        configure(action: more, with: .icon)
+        configure(action: icon, with: .icon)
         
-        return [deleteAction, more]
+        return [deleteAction, icon]
     }
     
     func configure(action: SwipeAction, with descriptor: ActionDescriptor) {
