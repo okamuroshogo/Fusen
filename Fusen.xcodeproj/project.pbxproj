@@ -49,6 +49,22 @@
 		2A9ECCD61E8F53CC00BAD2A5 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A9ECCD71E8F53CC00BAD2A5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */; };
 		2A9ECCD81E8F53CC00BAD2A5 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCDA1E8F5DCA00BAD2A5 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCD91E8F5DCA00BAD2A5 /* MemoViewModel.swift */; };
+		2A9ECCDB1E8F5DCA00BAD2A5 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCD91E8F5DCA00BAD2A5 /* MemoViewModel.swift */; };
+		2A9ECCDD1E8F5DD700BAD2A5 /* MemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCDC1E8F5DD700BAD2A5 /* MemoModel.swift */; };
+		2A9ECCDE1E8F5DD700BAD2A5 /* MemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECCDC1E8F5DD700BAD2A5 /* MemoModel.swift */; };
+		2A9ECCE51E8F5FE800BAD2A5 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCDF1E8F5FDC00BAD2A5 /* Bond.framework */; };
+		2A9ECCE61E8F5FE800BAD2A5 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCDF1E8F5FDC00BAD2A5 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCE71E8F5FE800BAD2A5 /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCE01E8F5FDC00BAD2A5 /* Diff.framework */; };
+		2A9ECCE81E8F5FE800BAD2A5 /* Diff.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCE01E8F5FDC00BAD2A5 /* Diff.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCE91E8F5FF000BAD2A5 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCDF1E8F5FDC00BAD2A5 /* Bond.framework */; };
+		2A9ECCEA1E8F5FF000BAD2A5 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCDF1E8F5FDC00BAD2A5 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCEB1E8F5FF000BAD2A5 /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCE01E8F5FDC00BAD2A5 /* Diff.framework */; };
+		2A9ECCEC1E8F5FF000BAD2A5 /* Diff.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCE01E8F5FDC00BAD2A5 /* Diff.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCF01E8F606100BAD2A5 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCED1E8F605200BAD2A5 /* ReactiveKit.framework */; };
+		2A9ECCF11E8F606100BAD2A5 /* ReactiveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCED1E8F605200BAD2A5 /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A9ECCF21E8F606800BAD2A5 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCED1E8F605200BAD2A5 /* ReactiveKit.framework */; };
+		2A9ECCF31E8F606800BAD2A5 /* ReactiveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9ECCED1E8F605200BAD2A5 /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +92,12 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2A9ECCD61E8F53CC00BAD2A5 /* Realm.framework in Embed Frameworks */,
+				2A9ECCEC1E8F5FF000BAD2A5 /* Diff.framework in Embed Frameworks */,
 				2A9ECCBD1E8EB25600BAD2A5 /* SwipeCellKit.framework in Embed Frameworks */,
 				2A9ECCD81E8F53CC00BAD2A5 /* RealmSwift.framework in Embed Frameworks */,
 				2A9ECCA51E8E8DE900BAD2A5 /* EPSignature.framework in Embed Frameworks */,
+				2A9ECCEA1E8F5FF000BAD2A5 /* Bond.framework in Embed Frameworks */,
+				2A9ECCF11E8F606100BAD2A5 /* ReactiveKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,9 +109,12 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2A9ECCD21E8F53C300BAD2A5 /* Realm.framework in Embed Frameworks */,
+				2A9ECCE81E8F5FE800BAD2A5 /* Diff.framework in Embed Frameworks */,
 				2A9ECCBB1E8EB24E00BAD2A5 /* SwipeCellKit.framework in Embed Frameworks */,
 				2A9ECCD41E8F53C300BAD2A5 /* RealmSwift.framework in Embed Frameworks */,
 				2A9ECCA81E8E8DEE00BAD2A5 /* EPSignature.framework in Embed Frameworks */,
+				2A9ECCE61E8F5FE800BAD2A5 /* Bond.framework in Embed Frameworks */,
+				2A9ECCF31E8F606800BAD2A5 /* ReactiveKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,9 +143,14 @@
 		2A9ECCBF1E8EB34900BAD2A5 /* FusenListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FusenListTableViewCell.swift; sourceTree = "<group>"; };
 		2A9ECCC01E8EB34900BAD2A5 /* FusenListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FusenListTableViewCell.xib; sourceTree = "<group>"; };
 		2A9ECCC51E8F508000BAD2A5 /* Fusen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fusen.swift; sourceTree = "<group>"; };
-		2A9ECCC81E8F521300BAD2A5 /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Memo.swift; path = Memo.swift; sourceTree = "<group>"; };
+		2A9ECCC81E8F521300BAD2A5 /* Memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		2A9ECCD91E8F5DCA00BAD2A5 /* MemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoViewModel.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
+		2A9ECCDC1E8F5DD700BAD2A5 /* MemoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoModel.swift; sourceTree = "<group>"; };
+		2A9ECCDF1E8F5FDC00BAD2A5 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
+		2A9ECCE01E8F5FDC00BAD2A5 /* Diff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Diff.framework; path = Carthage/Build/iOS/Diff.framework; sourceTree = "<group>"; };
+		2A9ECCED1E8F605200BAD2A5 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9ECCD51E8F53CC00BAD2A5 /* Realm.framework in Frameworks */,
+				2A9ECCEB1E8F5FF000BAD2A5 /* Diff.framework in Frameworks */,
 				2A9ECCBC1E8EB25600BAD2A5 /* SwipeCellKit.framework in Frameworks */,
 				2A9ECCD71E8F53CC00BAD2A5 /* RealmSwift.framework in Frameworks */,
 				2A9ECCA41E8E8DE900BAD2A5 /* EPSignature.framework in Frameworks */,
+				2A9ECCE91E8F5FF000BAD2A5 /* Bond.framework in Frameworks */,
+				2A9ECCF01E8F606100BAD2A5 /* ReactiveKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,9 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9ECCD11E8F53C300BAD2A5 /* Realm.framework in Frameworks */,
+				2A9ECCE71E8F5FE800BAD2A5 /* Diff.framework in Frameworks */,
 				2A9ECCBA1E8EB24E00BAD2A5 /* SwipeCellKit.framework in Frameworks */,
 				2A9ECCD31E8F53C300BAD2A5 /* RealmSwift.framework in Frameworks */,
 				2A9ECCA71E8E8DEE00BAD2A5 /* EPSignature.framework in Frameworks */,
+				2A9ECCE51E8F5FE800BAD2A5 /* Bond.framework in Frameworks */,
+				2A9ECCF21E8F606800BAD2A5 /* ReactiveKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +307,7 @@
 		2A9ECC891E8E8B0600BAD2A5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2A9ECCD91E8F5DCA00BAD2A5 /* MemoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -282,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				2A9ECC851E8E8B0200BAD2A5 /* Entities */,
+				2A9ECCDC1E8F5DD700BAD2A5 /* MemoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,6 +351,9 @@
 		2A9ECCA01E8E8DB100BAD2A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A9ECCED1E8F605200BAD2A5 /* ReactiveKit.framework */,
+				2A9ECCDF1E8F5FDC00BAD2A5 /* Bond.framework */,
+				2A9ECCE01E8F5FDC00BAD2A5 /* Diff.framework */,
 				2A9ECCCB1E8F53BB00BAD2A5 /* Realm.framework */,
 				2A9ECCCC1E8F53BB00BAD2A5 /* RealmSwift.framework */,
 				2A9ECCB71E8EB22600BAD2A5 /* SwipeCellKit.framework */,
@@ -510,6 +548,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Diff.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bond.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveKit.framework",
 			);
 			outputPaths = (
 			);
@@ -527,6 +568,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwipeCellKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Diff.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bond.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveKit.framework",
 			);
 			outputPaths = (
 			);
@@ -542,6 +586,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9ECC8E1E8E8B7B00BAD2A5 /* AppDelegate.swift in Sources */,
+				2A9ECCDD1E8F5DD700BAD2A5 /* MemoModel.swift in Sources */,
+				2A9ECCDA1E8F5DCA00BAD2A5 /* MemoViewModel.swift in Sources */,
 				2A9ECCC61E8F508000BAD2A5 /* Fusen.swift in Sources */,
 				2A9ECCB51E8EAD2900BAD2A5 /* FusenViewController.swift in Sources */,
 				2A9ECCC91E8F521300BAD2A5 /* Memo.swift in Sources */,
@@ -571,6 +617,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9ECC8F1E8E8B7B00BAD2A5 /* AppDelegate.swift in Sources */,
+				2A9ECCDE1E8F5DD700BAD2A5 /* MemoModel.swift in Sources */,
+				2A9ECCDB1E8F5DCA00BAD2A5 /* MemoViewModel.swift in Sources */,
 				2A9ECCC71E8F508000BAD2A5 /* Fusen.swift in Sources */,
 				2A9ECCB61E8EAD2900BAD2A5 /* FusenViewController.swift in Sources */,
 				2A9ECCCA1E8F521300BAD2A5 /* Memo.swift in Sources */,

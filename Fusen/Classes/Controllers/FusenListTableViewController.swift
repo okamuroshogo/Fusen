@@ -11,13 +11,30 @@ import SwipeCellKit
 
 class FusenListTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    fileprivate var samples = ["aa","bb","cc","dd","ee","ff","gg","hh"]
     fileprivate var buttonDisplayMode: ButtonDisplayMode = .titleAndImage
     var buttonStyle: ButtonStyle = .backgroundColor
+    private var nextVC: FusenViewController?
+    fileprivate var memoList: [Memo] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableViewSetUp()
+        MemoViewModel.sharedInstance.memoList.observe { _ in
+            self.memoList = MemoViewModel.sharedInstance.memoList.value
+            self.tableView.reloadData()
+        }
     }
+    
+    @IBAction func addNew(_ sender: Any) {
+        self.performSegue(withIdentifier: "fusen", sender: nil)
+        let memo = MemoModel.create()
+        self.nextVC?.memo = memo
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        self.nextVC = segue.destination as? FusenViewController
+    }
+    
 }
 
 extension FusenListTableViewController: UITableViewDataSource, UITableViewDelegate, SwipeTableViewCellDelegate {
@@ -36,13 +53,13 @@ extension FusenListTableViewController: UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.samples.count
+        return self.memoList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? FusenListTableViewCell else { return UITableViewCell() }
         cell.delegate = self
-        cell.label.text = self.samples[indexPath.row]
+        cell.label.text = self.memoList[indexPath.row].title
         return cell
     }
     func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {
@@ -58,7 +75,8 @@ extension FusenListTableViewController: UITableViewDataSource, UITableViewDelega
         
         let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
             // handle action by updating model with deletion
-            self.samples.remove(at: indexPath.row)
+            MemoModel.remove(at: indexPath.row)
+            self.memoList.remove(at: indexPath.row)
         }
         
         // customize the action appearance

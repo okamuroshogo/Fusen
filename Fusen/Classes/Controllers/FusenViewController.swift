@@ -11,6 +11,7 @@ import EPSignature
 
 class FusenViewController: UIViewController {
     let memoView = EPSignatureView()
+    var memo: Memo?
     
     override func viewDidLoad() {
         super.viewDidLoad()

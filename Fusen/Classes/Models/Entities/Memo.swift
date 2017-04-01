@@ -15,29 +15,22 @@ class Memo: Object {
     static let realm = try! Realm()
     dynamic var id          : Int      = 0
     dynamic var title       : String      = ""
-    dynamic private var imageData: Data? {
-        set {
-            self.imageData = newValue
-        }
-        get {
-            guard let image = self.image else { return nil }
-            return UIImagePNGRepresentation(image)
-        }
-    }
+    dynamic private var _image: UIImage? = nil
+    dynamic private var imageData: Data? = nil
     dynamic var image: UIImage? {
         set{
-            self.image = newValue
+            self._image = newValue
             if let value = newValue {
                 self.imageData = UIImagePNGRepresentation(value)
             }
         }
         get{
-            if let image = self.image {
+            if let image = self._image {
                 return image
             }
             if let data = self.imageData {
-                self.image = UIImage(data: data)
-                return self.image
+                self._image = UIImage(data: data)
+                return self._image
             }
             return nil
         }
@@ -81,6 +74,27 @@ class Memo: Object {
         } else {
             return 1
         }
+    }
+    
+    func save() {
+        try! Memo.realm.write {
+            Memo.realm.add(self)
+        }
+    }
+    
+    func delete() {
+        try! Memo.realm.write {
+            Memo.realm.delete(self)
+        }
+    }
+    
+    static func all() -> [Memo] {
+        let users = realm.objects(Memo.self).sorted(byKeyPath: "id", ascending: false)
+        var ret: [Memo] = []
+        for user in users {
+            ret.append(user)
+        }
+        return ret
     }
  
 }

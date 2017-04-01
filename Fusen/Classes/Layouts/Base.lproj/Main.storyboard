@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5H3-Wb-3dt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Pch-pC-Rf0">
@@ -39,13 +39,31 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="07d-jz-g2g"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zde-rz-qgO">
+                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qZG-dY-7Va"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="action" id="aCa-KI-P2m"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PPS-gE-t9b"/>
+                                    <barButtonItem systemItem="add" id="oE8-1S-6a9">
+                                        <connections>
+                                            <action selector="addNew:" destination="BYZ-38-t0r" id="I7p-fe-CRX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zde-rz-qgO" firstAttribute="top" secondItem="5H3-Wb-3dt" secondAttribute="bottom" id="6Mw-be-LMO"/>
                             <constraint firstItem="5H3-Wb-3dt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DJX-NV-tef"/>
                             <constraint firstItem="5H3-Wb-3dt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="R0g-fq-0sK"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5H3-Wb-3dt" secondAttribute="bottom" id="aZL-yT-jdS"/>
+                            <constraint firstAttribute="trailing" secondItem="zde-rz-qgO" secondAttribute="trailing" id="V8Z-ce-KvO"/>
+                            <constraint firstItem="zde-rz-qgO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fGm-VH-fZ0"/>
                             <constraint firstAttribute="trailing" secondItem="5H3-Wb-3dt" secondAttribute="trailing" id="fmM-4p-UfV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zde-rz-qgO" secondAttribute="bottom" id="j2e-pA-WYF"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -57,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697" y="-497"/>
+            <point key="canvasLocation" x="696.79999999999995" y="-497.00149925037488"/>
         </scene>
         <!--Fusen View Controller-->
         <scene sceneID="zDa-6r-Yr9">
